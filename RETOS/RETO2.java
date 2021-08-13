@@ -1,8 +1,6 @@
-package empresa;
-
 import java.util.Scanner;
 
-public class Empresa {
+public class RETO2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

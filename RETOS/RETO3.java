@@ -1,7 +1,7 @@
 
 import java.util.ArrayList;
 
-public class Producto {
+public class RETO3 {
 
     // Función 1
     public ArrayList<String> obtenerProductos(ArrayList<String> P) {

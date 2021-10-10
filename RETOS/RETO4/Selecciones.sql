@@ -1,0 +1,12 @@
+Select 'Consulta 1';
+SELECT contenido_titulo FROM Contenidos ORDER BY contenido_titulo;
+Select 'Consulta 2';
+SELECT contenido_titulo, pel_resumen, pel_año FROM Peliculas JOIN Contenidos ON (pel_id = contenido_id) WHERE pel_año >= 2000 ORDER BY contenido_titulo;
+Select 'Consulta 3';
+SELECT contenido_titulo FROM Contenidos JOIN Peliculas ON (pel_id = contenido_id) JOIN Director ON (pel_id = director_id) WHERE director_nombre = "Dean" AND director_apellido = "DeBlois";
+Select 'Consulta 4';
+SELECT contenido_titulo FROM Transmisiones JOIN Contenidos ON (tra_contenido = contenido_id) WHERE tra_username = "lucky" ORDER BY contenido_titulo;
+Select 'Consulta 5';
+SELECT us_username, us_nombre, us_apellido FROM Transmisiones JOIN Contenidos ON (tra_contenido = contenido_id) JOIN Usuarios ON (tra_username = us_username) WHERE contenido_titulo = "Hotel Transilvania" ORDER BY contenido_titulo;
+Select 'Consulta 6';
+SELECT count(pel_id) FROM Peliculas JOIN Contenidos ON (pel_id = contenido_id) WHERE pel_año >= 2000;
